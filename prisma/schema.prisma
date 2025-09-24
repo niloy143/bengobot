@@ -1,0 +1,85 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password_hash String
+  created_at    DateTime  @default(now())
+  updated_at    DateTime  @updatedAt
+  is_active     Boolean   @default(true)
+
+  // Relations
+  knowledgeBases KnowledgeBase[]
+  chatSessions    ChatSession[]
+  embedConfig     EmbedConfig?
+
+  @@map("users")
+}
+
+model KnowledgeBase {
+  id          String   @id @default(cuid())
+  user_id     String
+  title       String
+  content     String
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  is_active   Boolean  @default(true)
+
+  // Relations
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("knowledge_bases")
+}
+
+model ChatSession {
+  id                String   @id @default(cuid())
+  user_id           String
+  customer_identifier String?
+  created_at        DateTime @default(now())
+  updated_at        DateTime @updatedAt
+  is_active         Boolean  @default(true)
+
+  // Relations
+  user    User         @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  messages ChatMessage[]
+
+  @@map("chat_sessions")
+}
+
+model ChatMessage {
+  id            String   @id @default(cuid())
+  session_id    String
+  role          String   // 'user' or 'assistant'
+  content       String
+  created_at    DateTime @default(now())
+  tokens_used   Int?
+
+  // Relations
+  session ChatSession @relation(fields: [session_id], references: [id], onDelete: Cascade)
+
+  @@map("chat_messages")
+}
+
+model EmbedConfig {
+  id              String   @id @default(cuid())
+  user_id         String   @unique
+  embed_token     String   @unique
+  allowed_domains String[] // JSON array of allowed domains
+  created_at      DateTime @default(now())
+  is_active       Boolean  @default(true)
+
+  // Relations
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@map("embed_configs")
+}
