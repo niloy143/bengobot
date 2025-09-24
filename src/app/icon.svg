@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="fillGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="50%" style="stop-color:#00ff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#118611ff;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  <path d="M20 74 A 32 30 0 0 0 80 74 L90 34 67 54 50 14 32 54 10 34 20.3 75" stroke="#aad8aaff" fill="#118611ff" stroke-width="9"/>
+  <path d="M27 71 A 28 35 0 0 0 73 71 L77 56 65 66.5 49.84 34 35 66 23 56 27.3 72" stroke="#003000ff" fill="url(#fillGradient)" stroke-width="8"/>
+</svg>
