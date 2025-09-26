@@ -111,4 +111,68 @@
 			color: vars.$footer-text;
 		}
 	}
+
+	.pricing {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.plan {
+		background: white;
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+		text-align: center;
+		position: relative;
+
+		h3 {
+			color: vars.$dark-green;
+			margin-bottom: 1rem;
+			font-size: 1.5rem;
+		}
+
+		.price {
+			font-size: 2.5rem;
+			font-weight: bold;
+			color: vars.$dark-green;
+			margin-bottom: 1.5rem;
+
+			span {
+				font-size: 1rem;
+				font-weight: normal;
+				color: #666;
+			}
+		}
+
+		.badge {
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: vars.$light-green;
+			color: white;
+			padding: 0.3rem 1rem;
+			border-radius: 20px;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 2rem;
+
+			li {
+				padding: 0.5rem 0;
+				border-bottom: 1px solid #eee;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+	}
 }

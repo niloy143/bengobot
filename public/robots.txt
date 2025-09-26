@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bengobot.niloy.org/sitemap.xml

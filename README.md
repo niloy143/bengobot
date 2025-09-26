@@ -4,6 +4,33 @@
 
 BengoBot is an intelligent AI-powered chatbot solution that provides instant customer support and engagement for websites. With easy integration and powerful features, BengoBot helps businesses answer customer questions 24/7 while boosting user engagement.
 
+## 💰 Pricing Plans
+
+Choose the plan that fits your business needs:
+
+### **Starter Plan** - $29/month
+- Up to 1,000 conversations per month
+- Basic AI responses
+- Standard integration
+- Email support
+
+### **Professional Plan** - $99/month
+- Up to 10,000 conversations per month
+- Advanced AI with custom training
+- Priority integration support
+- Chat analytics dashboard
+- Phone & email support
+
+### **Enterprise Plan** - Custom pricing
+- Unlimited conversations
+- Custom AI model training
+- White-label solution
+- Advanced analytics & reporting
+- Dedicated account manager
+- 24/7 premium support
+
+*All plans include secure data handling, multilingual support, and easy website integration.*
+
 ## ✨ Features
 
 ### ⚡ Instant Replies
@@ -53,18 +80,19 @@ Your visitors get instant, accurate replies to their questions, improving custom
 - Support documentation sites
 - Any business looking to improve customer engagement
 
-## 📞 Getting Started
+## � Getting Started
 
 Ready to transform your customer support experience?
 
-1. **Join the Waitlist**: Sign up to be notified when BengoBot becomes available
-2. **Get Your Integration Code**: Receive your unique BengoBot embed code
-3. **Add to Your Site**: Copy and paste the code into your website
-4. **Start Chatting**: Watch as BengoBot begins helping your customers instantly
+1. **Choose Your Plan**: Select the pricing plan that fits your business needs
+2. **Sign Up**: Create your account and configure your chatbot
+3. **Integrate**: Add BengoBot to your website with our simple integration code
+4. **Customize**: Train your chatbot with your business knowledge
+5. **Launch**: Start providing instant customer support
 
 ## 🌐 Live Demo
 
-Visit our website to see BengoBot in action: [https://bengobot.niloy.org](https://bengobot.niloy.org)
+Visit our website to see BengoBot in action and explore our pricing plans: [https://bengobot.niloy.org](https://bengobot.niloy.org)
 
 ## 📄 License
 

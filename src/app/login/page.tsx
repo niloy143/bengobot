@@ -2,6 +2,16 @@ import { t } from "../../utils/i18n";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.scss";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Login to BengoBot - Access Your AI Chatbot Dashboard",
+	description: "Login to your BengoBot account to manage your AI chatbot, view analytics, and customize your customer support experience.",
+	robots: {
+		index: false,
+		follow: false,
+	},
+};
 
 export default function Login() {
 	return (
