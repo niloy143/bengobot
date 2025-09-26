@@ -1,0 +1,23 @@
+@use "@/styles/variables" as vars;
+@use "@/styles/forms" as forms;
+@use "@/styles/auth" as auth;
+
+.page {
+	@include auth.page;
+}
+
+.header {
+	@include auth.header;
+}
+
+.main {
+	@include auth.main;
+
+	.form {
+		@include forms.form;
+	}
+
+	.link {
+		@include forms.link;
+	}
+}

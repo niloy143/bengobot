@@ -1,3 +1,7 @@
+## 26-09-25
+- UI built for Login and Register pages
+- Added in Google Search Console
+
 ## 24-09-25
 - Tried git spec kit, after a couple of trials, decided to do it manually
 - Installed and configured nextjs.

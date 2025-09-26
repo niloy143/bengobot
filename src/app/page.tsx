@@ -9,7 +9,7 @@ export default function Home() {
 				<Image src="/icons/logo.svg" alt="BengoBot Logo" width={90} height={90} />
 				<h1>{t("BengoBot")}</h1>
 				<p>{t("Smart, lightweight AI chatbot for your website.")}</p>
-				<a href="#waitlist" className={styles.btnPrimary}>{t("Get Started Free")}</a>
+				<a href="/register" className={styles.btn_primary}>{t("Get Started Free")}</a>
 			</header>
 
 			<section className={styles.section}>
@@ -36,7 +36,7 @@ export default function Home() {
 
 			<section className={styles.section}>
 				<h2>{t("How It Works")}</h2>
-				<div className={styles.howItWorks}>
+				<div className={styles.how_it_works}>
 					<div className={styles.step}>
 						<h3>{t("1️⃣ Embed")}</h3>
 						<p>{t("Add Bengobot to your site in seconds.")}</p>
@@ -54,7 +54,7 @@ export default function Home() {
 
 			<footer className={styles.footer}>
 				<h2>{t("Ready to try BengoBot?")}</h2>
-				<a href="#waitlist" className={styles.btnPrimary}>{t("Join the Waitlist")}</a>
+				<a href="/login" className={styles.btn_primary}>{t("Join the Wait List")}</a>
 				<p>{t("© 2025 BengoBot. All rights reserved.")}</p>
 			</footer>
 		</div>
