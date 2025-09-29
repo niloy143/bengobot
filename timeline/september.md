@@ -1,3 +1,7 @@
+## 29-09-25
+- Implemented login and logout functionality
+- temporary dashboard page UI
+
 ## 26-09-25
 - UI built for Login and Register pages
 - Added in Google Search Console

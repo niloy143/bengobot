@@ -1,12 +1,12 @@
 import styles from "./page.module.scss";
-import { t } from "../../utils/i18n";
+import { t } from "@/utils/i18n";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Register for BengoBot - Create Your AI Chatbot Account",
-	description: "Sign up for BengoBot and choose your pricing plan. Easy setup in minutes, start with our Starter plan at $29/month.",
+	title: t("Register for BengoBot - Create Your AI Chatbot Account"),
+	description: t("Sign up for BengoBot and choose your pricing plan. Easy setup in minutes, start with our Starter plan at $29/month."),
 	robots: {
 		index: false,
 		follow: false,

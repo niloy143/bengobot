@@ -4,12 +4,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "BengoBot - Smart AI Chatbot for Websites | Professional Customer Support",
-	description: "Transform your website with BengoBot, the intelligent AI chatbot that provides instant customer support 24/7. Choose from our flexible pricing plans starting at $29/month.",
-	keywords: ["AI chatbot", "customer support", "website chatbot", "business chatbot", "AI assistant", "customer service"],
+	title: t("BengoBot - Smart AI Chatbot for Websites | Professional Customer Support"),
+	description: t(
+		"Transform your website with BengoBot, the intelligent AI chatbot that provides instant customer support 24/7. Choose from our flexible pricing plans starting at $29/month."
+	),
+	keywords: [t("AI chatbot"), t("customer support"), t("website chatbot"), t("business chatbot"), t("AI assistant"), t("customer service")],
 	openGraph: {
-		title: "BengoBot - Smart AI Chatbot for Websites",
-		description: "Professional AI-powered chatbot for instant customer support. Flexible pricing plans, easy integration, 24/7 availability.",
+		title: t("BengoBot - Smart AI Chatbot for Websites"),
+		description: t("Professional AI-powered chatbot for instant customer support. Flexible pricing plans, easy integration, 24/7 availability."),
 		url: "https://bengobot.niloy.org",
 	},
 	alternates: {
@@ -24,7 +26,9 @@ export default function Home() {
 				<Image src="/icons/logo.svg" alt="BengoBot Logo" width={90} height={90} />
 				<h1>{t("BengoBot")}</h1>
 				<p>{t("Smart, lightweight AI chatbot for your website.")}</p>
-								<a href="#pricing" className={styles.btn_primary}>{t("View Pricing")}</a>
+				<a href="#pricing" className={styles.btn_primary}>
+					{t("View Pricing")}
+				</a>
 			</header>
 
 			<section className={styles.section}>
@@ -72,26 +76,34 @@ export default function Home() {
 				<div className={styles.pricing}>
 					<div className={styles.plan}>
 						<h3>{t("Starter")}</h3>
-						<div className={styles.price}>$29<span>/month</span></div>
+						<div className={styles.price}>
+							$29<span>/month</span>
+						</div>
 						<ul>
 							<li>{t("1,000 conversations/month")}</li>
 							<li>{t("Basic AI responses")}</li>
 							<li>{t("Standard integration")}</li>
 							<li>{t("Email support")}</li>
 						</ul>
-						<a href="/register" className={styles.btn_primary}>{t("Get Started")}</a>
+						<a href="/register" className={styles.btn_primary}>
+							{t("Get Started")}
+						</a>
 					</div>
-					<div className={styles.plan} style={{border: '2px solid #2ecc71'}}>
+					<div className={styles.plan} style={{ border: "2px solid #2ecc71" }}>
 						<div className={styles.badge}>{t("Popular")}</div>
 						<h3>{t("Professional")}</h3>
-						<div className={styles.price}>$99<span>/month</span></div>
+						<div className={styles.price}>
+							$99<span>/month</span>
+						</div>
 						<ul>
 							<li>{t("10,000 conversations/month")}</li>
 							<li>{t("Advanced AI training")}</li>
 							<li>{t("Analytics dashboard")}</li>
 							<li>{t("Priority support")}</li>
 						</ul>
-						<a href="/register" className={styles.btn_primary}>{t("Get Started")}</a>
+						<a href="/register" className={styles.btn_primary}>
+							{t("Get Started")}
+						</a>
 					</div>
 					<div className={styles.plan}>
 						<h3>{t("Enterprise")}</h3>
@@ -102,14 +114,18 @@ export default function Home() {
 							<li>{t("White-label solution")}</li>
 							<li>{t("24/7 premium support")}</li>
 						</ul>
-						<a href="/register" className={styles.btn_primary}>{t("Contact Sales")}</a>
+						<a href="/register" className={styles.btn_primary}>
+							{t("Contact Sales")}
+						</a>
 					</div>
 				</div>
 			</section>
 
 			<footer className={styles.footer}>
 				<h2>{t("Ready to try BengoBot?")}</h2>
-								<a href="#pricing" className={styles.btn_primary}>{t("Choose Your Plan")}</a>
+				<a href="#pricing" className={styles.btn_primary}>
+					{t("Choose Your Plan")}
+				</a>
 				<p>{t("© 2025 BengoBot. All rights reserved.")}</p>
 			</footer>
 		</div>
