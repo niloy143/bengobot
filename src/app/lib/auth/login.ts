@@ -5,14 +5,14 @@ import { token } from "./cookie";
 
 export async function login(email?: string, password?: string) {
 	if (!email || !password) {
-		throw { message: t("Email and password are required"), status: 400 };
+		throw new Error(t("Email and password are required"));
 	}
 
 	const user = await User.findByEmail(email);
 	const isValidPassword = user?.password === password;
 
 	if (!user || !isValidPassword) {
-		throw { message: t("Invalid email or password"), status: 400 };
+		throw new Error(t("Invalid email or password"));
 	}
 
 	const userWithoutPassword = { id: user.id, email: user.email };

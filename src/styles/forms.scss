@@ -42,6 +42,18 @@
 		&:hover {
 			background: variables.$light-green-hover;
 		}
+
+		&:disabled {
+			background: #ccc;
+			color: #666;
+			cursor: not-allowed;
+			opacity: 0.6;
+
+			&:hover {
+				background: #ccc;
+				color: #666;
+			}
+		}
 	}
 }
 
